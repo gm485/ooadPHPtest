@@ -1,5 +1,3 @@
-<!DOCTYPE html>
-<html lang="en">
 
 <?php include "templates/header.php"; ?>
 <ul>
@@ -8,6 +6,14 @@
     <li><a href="update.php"><strong>Update</strong></a> - edit a user</li>
     <li><a href="delete.php"><strong>Delete</strong></a> - delete a user</li>
 </ul>
+
+<?php
+include "classes/Person.php";
+use classes\Person;
+$person = new Person('Gary');
+echo $person->getName();
+?>
+
 
 <?php include "templates/footer.php"; ?>
 
